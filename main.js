@@ -12,12 +12,12 @@ likableElements.forEach(likableElement => {
     mimicServerCall()
     //.then(response => response.json())
     //.then(json => toggleLiked(json))
-    .then((json) => toggleLiked(json))
+    .then((json) => toggleLiked(json, likableElement))
     .catch(error => renderError(error));
   })
 });
 
-function toggleLiked(json){
+function toggleLiked(json, likeableElement){
   //const likableElement =
   // console.log(likeableElement.className == "activated-heart");
   // if (likeableElement.className == "activated-heart"){
