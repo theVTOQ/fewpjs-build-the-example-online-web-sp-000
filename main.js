@@ -14,7 +14,7 @@ likableElements.forEach(likableElement => {
     //.then(json => toggleLiked(json))
     .then(() => function(){
       if (likeableElement.className = "activated-heart"){
-        likeableElement.innerHTML = ? FULL_HEART : EMPTY_HEART;
+        likeableElement.innerHTML = EMPTY_HEART;
       else{
         likeableElement.innerHTML = FULL_HEART;
         likeableElement.className = "activated-heart";
