@@ -4,13 +4,27 @@ const FULL_HEART = '♥'
 
 // Your JavaScript code goes here!
 const errorModal = document.querySelector("#modal");
+const errorMessage = errorModal.querySelector("#modal-message");
 errorModal.className = "hidden";
 const likableElements = document.querySelectorAll(".like-glyph");
 likableElements.forEach(likableElement => {
   likableElement.addEventListener("click", () => {
-
+    mimicServerCall()
+    .then(response => response.json())
+    .then(json => toggleLiked(json))
+    .catch(error => renderError(error));
   })
 });
+
+function toggleLiked(json){
+  console.log(json);
+}
+
+function renderError(error){
+  errorMessage.innerHTML = error.message;
+  errorModal.classList.remove("hidden");
+  setTimeout(function(){ errorModal.className = "hidden"; }, 5000);
+}
 
 //------------------------------------------------------------------------------
 // Ignore after this point. Used only for demo purposes
