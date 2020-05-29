@@ -10,7 +10,7 @@ const likableElements = document.querySelectorAll(".like-glyph");
 likableElements.forEach(likableElement => {
   likableElement.addEventListener("click", () => {
     mimicServerCall()
-    .then(response => response.json())
+    //.then(response => response.json())
     .then(json => toggleLiked(json))
     .catch(error => renderError(error));
   })
