@@ -18,8 +18,8 @@ likableElements.forEach(likableElement => {
 });
 
 function toggleLiked(json, likeableElement){
-  console.log(json);
-  console.log(likeableElement.className == "activated-heart");
+  //console.log(json);
+  //console.log(likeableElement.className == "activated-heart");
   if (likeableElement.className == "activated-heart"){
     likeableElement.innerHTML = EMPTY_HEART;
     likeableElement.classList.remove("activated-heart");
