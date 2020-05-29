@@ -3,9 +3,14 @@ const EMPTY_HEART = '♡'
 const FULL_HEART = '♥'
 
 // Your JavaScript code goes here!
+const errorModal = document.querySelector("#modal");
+errorModal.className = "hidden";
+const likableElements = document.querySelectorAll(".like-glyph");
+likableElements.forEach(likableElement => {
+  likableElement.addEventListener("click", () => {
 
-
-
+  })
+});
 
 //------------------------------------------------------------------------------
 // Ignore after this point. Used only for demo purposes
