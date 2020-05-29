@@ -12,9 +12,7 @@ likableElements.forEach(likableElement => {
     mimicServerCall()
     //.then(response => response.json())
     //.then(json => toggleLiked(json))
-    .then((json) => function(json){
-
-    })
+    .then((json) => toggleLiked(json))
     .catch(error => renderError(error));
   })
 });
