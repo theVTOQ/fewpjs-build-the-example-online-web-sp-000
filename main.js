@@ -12,7 +12,7 @@ likableElements.forEach(likableElement => {
     mimicServerCall()
     //.then(response => response.json())
     //.then(json => toggleLiked(json))
-    .then(() => function(){
+    .then((json) => function(json){
       if (likeableElement.className == "activated-heart"){
         likeableElement.innerHTML = EMPTY_HEART;
         likeableElement.classList.remove("activated-heart");
