@@ -11,7 +11,10 @@ likableElements.forEach(likableElement => {
   likableElement.addEventListener("click", () => {
     mimicServerCall()
     //.then(response => response.json())
-    .then(json => toggleLiked(json))
+    //.then(json => toggleLiked(json))
+    .then(() => function(){
+      likeableElement.innerHTML = FULL_HEART;
+    })
     .catch(error => renderError(error));
   })
 });
