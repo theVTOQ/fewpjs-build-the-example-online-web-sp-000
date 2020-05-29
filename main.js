@@ -13,7 +13,8 @@ likableElements.forEach(likableElement => {
     //.then(response => response.json())
     //.then(json => toggleLiked(json))
     .then(() => function(){
-      likeableElement.innerHTML = FULL_HEART;
+      likeableElement.innerHTML = ? FULL_HEART : EMPTY_HEART;
+      likeableElement.className = "activated-heart";
     })
     .catch(error => renderError(error));
   })
