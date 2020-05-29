@@ -24,6 +24,7 @@ function toggleLiked(json){
 function renderError(error){
   errorMessage.innerHTML = error.message;
   errorModal.classList.remove("hidden");
+  //hide the error modal after 5 seconds:
   setTimeout(function(){ errorModal.className = "hidden"; }, 5000);
 }
 
