@@ -13,14 +13,7 @@ likableElements.forEach(likableElement => {
     //.then(response => response.json())
     //.then(json => toggleLiked(json))
     .then((json) => function(json){
-      console.log(likeableElement.className == "activated-heart");
-      if (likeableElement.className == "activated-heart"){
-        likeableElement.innerHTML = EMPTY_HEART;
-        likeableElement.classList.remove("activated-heart");
-      }else{
-        likeableElement.innerHTML = FULL_HEART;
-        likeableElement.className = "activated-heart";
-      }
+
     })
     .catch(error => renderError(error));
   })
@@ -28,6 +21,14 @@ likableElements.forEach(likableElement => {
 
 function toggleLiked(json){
   //const likableElement =
+  // console.log(likeableElement.className == "activated-heart");
+  // if (likeableElement.className == "activated-heart"){
+  //   likeableElement.innerHTML = EMPTY_HEART;
+  //   likeableElement.classList.remove("activated-heart");
+  // }else{
+  //   likeableElement.innerHTML = FULL_HEART;
+  //   likeableElement.className = "activated-heart";
+  // }
   console.log(json);
 }
 
