@@ -13,7 +13,7 @@ likableElements.forEach(likableElement => {
     //.then(response => response.json())
     //.then(json => toggleLiked(json))
     .then(() => function(){
-      if (likeableElement.className = "activated-heart"){
+      if (likeableElement.className == "activated-heart"){
         likeableElement.innerHTML = EMPTY_HEART;
         likeableElement.classList.remove("activated-heart");
       else{
