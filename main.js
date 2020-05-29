@@ -17,6 +17,7 @@ likableElements.forEach(likableElement => {
 });
 
 function toggleLiked(json){
+  //const likableElement =
   console.log(json);
 }
 
