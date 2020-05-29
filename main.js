@@ -16,7 +16,7 @@ likableElements.forEach(likableElement => {
       if (likeableElement.className == "activated-heart"){
         likeableElement.innerHTML = EMPTY_HEART;
         likeableElement.classList.remove("activated-heart");
-      else{
+      }else{
         likeableElement.innerHTML = FULL_HEART;
         likeableElement.className = "activated-heart";
       }
